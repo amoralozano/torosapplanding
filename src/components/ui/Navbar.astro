@@ -1,0 +1,85 @@
+---
+const isOpen = false;
+function toggleMenu() {
+    const menu = document.getElementById("dropdownMenu");
+    if (menu !== null) {
+        menu.classList.toggle("hidden");
+    }
+}
+---
+
+<nav class="p-4 mt-[-20px] md:mt-[0px] ml-[30px] md:ml-0">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <!-- Left: Button to View Website -->
+
+        <!-- Center: Logo (Hidden on small screens) -->
+        <div class="sm:block text-white text-xl font-bold">
+            <a href="/">
+                <img
+                    src="https://i.imgur.com/AU9hSzx.png"
+                    alt=""
+                    class="w-[100px] h-[100px] md:w-[90px] md:h-[90px] mt-[20px] ml-[0px] md:ml-[0px]"
+                />
+            </a>
+        </div>
+
+        <!-- Right: Dropdown Menu -->
+        <div class="relative">
+            <button
+                class="text-white focus:outline-none bg-gray-700 px-4 py-2 rounded hover:bg-gray-600 hidden md:visible"
+                onclick="toggleMenu()"
+            >
+                Menu
+            </button>
+
+            <!-- Dropdown Menu (Hidden on small screens) -->
+            <div
+                id="dropdownMenu"
+                class="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg hidden md:hidden sm:block"
+            >
+                <a
+                    href="#"
+                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+                >
+                    Option 1
+                </a>
+                <a
+                    href="#"
+                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+                >
+                    Option 2
+                </a>
+                <a
+                    href="#"
+                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+                >
+                    Option 3
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu (Visible on small screens) -->
+    <div id="dropdownMenu" class="sm:hidden hidden">
+        <div class="px-2 pt-2 pb-3 space-y-1">
+            <a href="/" class="block px-4 py-2 text-white bg-gray-800 rounded">
+                Option 1
+            </a>
+            <a href="/" class="block px-4 py-2 text-white bg-gray-800 rounded">
+                Option 2
+            </a>
+            <a href="/" class="block px-4 py-2 text-white bg-gray-800 rounded">
+                Option 3
+            </a>
+        </div>
+    </div>
+</nav>
+
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById("dropdownMenu");
+        if (menu !== null) {
+            menu.classList.toggle("hidden");
+        }
+    }
+</script>

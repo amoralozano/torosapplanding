@@ -1,0 +1,325 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Navbar from "../components/ui/Navbar.astro";
+import Footer from "../components/ui/Footer.astro";
+---
+
+<Layout title="Welcome to Astro.">
+	<main class="w-full flex items-center justify-center">
+		<div>
+			<Navbar />
+			<div
+				class="w-full h-[500px] md:h-[700px] ml-[10px] md:ml-0 md:mt-[30px] bg-[#414141] rounded-tr-lg rounded-tl-lg"
+			>
+				<h1
+					class="text-center text-[55px] font-bold pt-[30px] md:pt-[10px] text-white"
+				>
+					Mexican Food Made Right
+				</h1>
+				<p
+					class="text-center text-[18px] mt-[-40px] font-normal text-white"
+				>
+					This Burger will fill your mouth with a party of a sweet
+					juicy flavors.
+				</p>
+				<div class="w-full flex items-center justify-center mt-[40px]">
+					<button
+						class="w-[250px] h-[50px] rounded-full bg-[#FB8951] text-white"
+						>Download App</button
+					>
+				</div>
+				<div
+					class="w-full flex items-center justify-center mt-[-40px] md:mt-[0px]"
+				>
+					<img
+						src="https://i.imgur.com/AoZBwtT.png"
+						alt=""
+						class="w-[80%] h-[80%] md:w-[45%] md:h-[45%] mt-[90px] md:mt-[50px]"
+					/>
+				</div>
+			</div>
+			<div
+				class="w-full h-[100px] ml-[10px] md:ml-0 mt-0 md:mt-[-30px] rounded-md md:rounded-none bg-[#FB8951]"
+			>
+			</div>
+			<div
+				class="w-full bg-[#414141] md:flex md:items-center md:justify-center mt-[100px] ml-[20px] md:ml-0"
+			>
+				<div class="w-full h-[60%] md:w-[50%] md:h-full">
+					<p
+						class="text-left ml-[50px] md:ml-[100px] pt-[0px] md:pt-[0px] text-[25px] text-[#FB8951]"
+					>
+						Our Menu
+					</p>
+					<p
+						class="text-white text-left ml-[50px] md:ml-[100px] w-[80%] font-bold text-[50px] mt-[0px]"
+					>
+						Order at your Fingertips
+					</p>
+					<p
+						class="text-left text-white ml-[50px] md:ml-[100px] text-[16px] w-[70%] mt-[20px]"
+					>
+						This Burger will fill your mouth with a party of a sweet
+						juicy flavors, with your choice of your patty. The
+						burger plant based is only 150 CAL which is an
+						equivalent to eating a hot chetto bag.
+					</p>
+					<button
+						class="ml-[50px] w-[250px] h-[50px] md:ml-[100px] mt-[30px] rounded-full text-[16px] font-bold bg-[#FB8951] text-white"
+						>Learn More</button
+					>
+				</div>
+				<div
+					class="w-[80%] h-[40%] md:w-[50%] md:h-full banner1back flex items-center justify-center ml-[50px] mt-[40px]"
+				>
+					<img
+						src="https://i.imgur.com/QgepKB9.png"
+						alt=""
+						class="md:w-[100%] md:h-[100%] md:mt-[40px]"
+					/>
+				</div>
+			</div>
+			<div
+				class="w-full bg-[#414141] md:flex md:flex-row-reverse md:items-center md:justify-center ml-[20px] md:ml-0"
+			>
+				<div class="w-full h-[60%] md:w-[50%] md:h-full">
+					<p
+						class="invisible md:visible text-right md:text-left ml-[50px] md:ml-[100px] pt-[20px] md:pt-[120px] text-[25px] text-[#FB8951]"
+					>
+						Endless Options
+					</p>
+					<p
+						class="text-white text-right md:text-left ml-[30px] md:ml-[100px] w-[80%] font-bold text-[50px] mt-[0px]"
+					>
+						Mix and Match your Meals
+					</p>
+					<p
+						class="text-right md:text-left text-white ml-[50px] md:ml-[100px] text-[16px] w-[75%] md:w-[70%] mt-[20px]"
+					>
+						This Burger will fill your mouth with a party of a sweet
+						juicy flavors, with your choice of your patty. The
+						burger plant based is only 150 CAL which is an
+						equivalent to eating a hot chetto bag.
+					</p>
+					<button
+						class="ml-[120px] md:ml-[100px] w-[250px] h-[50px] mt-[30px] md:mt-[30px] rounded-full text-[16px] font-bold bg-[#FB8951] text-white"
+						>Learn More</button
+					>
+				</div>
+				<div
+					class="w-[80%] h-[40%] md:w-[50%] md:h-full banner1back flex items-center justify-center ml-[50px] md:ml-[100px] mt-[30px] md:mt-0"
+				>
+					<img
+						src="https://i.imgur.com/QlwBXpL.png"
+						alt=""
+						class="w-[100%] h-[100%] mt-[40px] md:mt-[40px]"
+					/>
+				</div>
+			</div>
+			<div
+				class="w-full md:h-[550px] ml-[15px] mt-0 md:mt-[100px] bg-[#4f4f4f]"
+			>
+				<h2
+					class="text-center text-[55px] font-bold pt-[50px] text-white"
+				>
+					Easy App Easy food getting
+				</h2>
+				<div
+					class="w-full md:flex md:items-center md:justify-center mt-[50px]"
+				>
+					<div
+						class="w-[90%] md:w-[30%] h-[250px] md:h-[270px] glassmorphism-card flex items-center justify-center rounded-lg ml-[20px] md:ml-0"
+					>
+						<div
+							class="w-[40%] h-full flex items-center justify-center"
+						>
+							<img
+								src="https://i.imgur.com/YPjTC5M.png"
+								alt=""
+								class="w-full h-full rounded-lg"
+							/>
+						</div>
+						<div class="w-[60%] h-full">
+							<h2
+								class="text-[65px] font-bold text-left ml-[20px] mt-[15px] text-[#FB8951]"
+							>
+								"
+							</h2>
+							<h2
+								class="text-[15px] font-bold text-left w-[95%] ml-[20px] mt-[-45px] text-black hover:text-white"
+							>
+								This Burger will fill your mouth with a party of
+								a sweet juicy flavors.
+							</h2>
+							<h2
+								class="text-[17px] font-bold text-left ml-[20px] mt-[10px] text-[#FB8951]"
+							>
+								Jake Rice
+							</h2>
+						</div>
+					</div>
+					<div
+						class="w-[90%] md:w-[30%] h-[250px] md:h-[270px] glassmorphism-card flex items-center justify-center rounded-lg ml-[20px] md:ml-[30px] mt-[20px] md:mt-0"
+					>
+						<div
+							class="w-[40%] h-full flex items-center justify-center"
+						>
+							<img
+								src="https://i.imgur.com/YddLi4s.png"
+								alt=""
+								class="w-full h-full rounded-lg"
+							/>
+						</div>
+						<div class="w-[60%] h-full">
+							<h2
+								class="text-[65px] font-bold text-left ml-[20px] mt-[15px] text-[#FB8951]"
+							>
+								"
+							</h2>
+							<h2
+								class="text-[15px] font-bold text-left w-[95%] ml-[20px] mt-[-45px] text-black hover:text-white"
+							>
+								This Burger will fill your mouth with a party of
+								a sweet juicy flavors.
+							</h2>
+							<h2
+								class="text-[17px] font-bold text-left ml-[20px] mt-[10px] text-[#FB8951]"
+							>
+								Ally Mole
+							</h2>
+						</div>
+					</div>
+				</div>
+				<div class="w-full h-[30px]"></div>
+			</div>
+			<div
+				class="w-full h-[800px] md:h-[500px] bg-[#414141] ml-[15px] flex items-center justify-center"
+			>
+				<div
+					class="w-[90%] md:w-[75%] h-[85%] bg-[#FB8951] rounded-xl md:flex md:items-center md:mt-[70px] md:justify-center"
+				>
+					<div class="w-full h-[40%] md:w-[60%] md:h-full">
+						<h2
+							class="text-white ml-[30px] md:ml-[70px] pt-[40px] md:pt-[80px] text-[42px] w-[80%] font-bold"
+						>
+							Download our App Today
+						</h2>
+						<p
+							class="text-white ml-[30px] md:ml-[70px] mt-[10px] text-[18px] font-normal w-[80%]"
+						>
+							This Burger will fill your mouth with a party of a
+							sweet juicy flavors, with your choice of your patty.
+							This is a placeholder and nothing is said.
+						</p>
+						<div class="w-full h-[50px] mt-[30px]">
+							<button
+								class="text-[18px] w-[300px] h-full bg-black text-white ml-[30px] md:ml-[70px] rounded-lg"
+								>Download App</button
+							>
+						</div>
+					</div>
+					<div class="w-full h-[50%] md:w-[50%] md:h-full">
+						<img
+							src="https://i.imgur.com/QlwBXpL.png"
+							alt=""
+							class="w-[100%] h-[100%] ml-[0px] md:ml-[-50px] mt-[120px] md:mt-0"
+						/>
+					</div>
+				</div>
+			</div>
+			<div
+				class="relative w-full h-[500px] bg-[#414141] flex items-center justify-center"
+			>
+				<Footer />
+			</div>
+		</div>
+	</main>
+
+	<style>
+		main {
+		}
+		.astro-a {
+			position: absolute;
+			top: -32px;
+			left: 50%;
+			transform: translatex(-50%);
+			width: 220px;
+			height: auto;
+			z-index: -1;
+		}
+		h1 {
+			font-size: 4rem;
+			font-weight: 700;
+			line-height: 1;
+			text-align: center;
+			margin-bottom: 1em;
+		}
+		.text-gradient {
+			background-image: var(--accent-gradient);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-size: 400%;
+			background-position: 0%;
+		}
+		.instructions {
+			margin-bottom: 2rem;
+			border: 1px solid rgba(var(--accent-light), 25%);
+			background: linear-gradient(
+				rgba(var(--accent-dark), 66%),
+				rgba(var(--accent-dark), 33%)
+			);
+			padding: 1.5rem;
+			border-radius: 8px;
+		}
+		.instructions code {
+			font-size: 0.8em;
+			font-weight: bold;
+			background: rgba(var(--accent-light), 12%);
+			color: rgb(var(--accent-light));
+			border-radius: 4px;
+			padding: 0.3em 0.4em;
+		}
+		.instructions strong {
+			color: rgb(var(--accent-light));
+		}
+		.link-card-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+			gap: 2rem;
+			padding: 0;
+		}
+
+		.banner1back {
+			position: relative;
+
+			height: 100%; /* Adjust the height as needed */
+			background-image: url("https://i.imgur.com/tmdfLXU.png");
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+
+		.glassmorphism-card {
+			background: rgba(
+				255,
+				255,
+				255,
+				0.1
+			); /* Slightly transparent white */
+			border-radius: 15px; /* Rounded corners */
+			backdrop-filter: blur(10px); /* Frosted glass blur effect */
+			-webkit-backdrop-filter: blur(10px); /* For Safari */
+			box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+			border: 1px solid rgba(255, 255, 255, 0.2); /* Thin, semi-transparent border */
+			padding: 20px; /* Padding inside the card */
+			transition:
+				transform 0.3s ease,
+				box-shadow 0.3s ease; /* Smooth hover effect */
+		}
+
+		.glassmorphism-card:hover {
+			transform: scale(1.05); /* Slight zoom on hover */
+			box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+		}
+	</style>
+</Layout>
